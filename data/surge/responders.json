@@ -1,0 +1,84 @@
+[
+  {
+    "id": "FR-ENG1",
+    "type": "fire_engine",
+    "base": "S1",
+    "capabilities": [
+      "fire_suppression",
+      "extrication"
+    ],
+    "x": 4.0,
+    "y": 17.0,
+    "crew": 5,
+    "status": "available",
+    "busy_until_min": 0
+  },
+  {
+    "id": "FR-ENG2",
+    "type": "fire_engine",
+    "base": "S3",
+    "capabilities": [
+      "fire_suppression",
+      "extrication"
+    ],
+    "x": 16.0,
+    "y": 5.0,
+    "crew": 4,
+    "status": "available",
+    "busy_until_min": 0
+  },
+  {
+    "id": "FR-RES1",
+    "type": "rescue_squad",
+    "base": "S2",
+    "capabilities": [
+      "heavy_rescue",
+      "extrication"
+    ],
+    "x": 10.0,
+    "y": 9.0,
+    "crew": 3,
+    "status": "available",
+    "busy_until_min": 0
+  },
+  {
+    "id": "FR-HAZ1",
+    "type": "hazmat_unit",
+    "base": "S2",
+    "capabilities": [
+      "hazmat",
+      "decontamination"
+    ],
+    "x": 10.0,
+    "y": 9.0,
+    "crew": 4,
+    "status": "available",
+    "busy_until_min": 0
+  },
+  {
+    "id": "FR-POL1",
+    "type": "police_patrol",
+    "base": "S2",
+    "capabilities": [
+      "scene_control"
+    ],
+    "x": 10.0,
+    "y": 9.0,
+    "crew": 5,
+    "status": "available",
+    "busy_until_min": 0
+  },
+  {
+    "id": "FR-POL2",
+    "type": "police_patrol",
+    "base": "S1",
+    "capabilities": [
+      "scene_control"
+    ],
+    "x": 4.0,
+    "y": 17.0,
+    "crew": 5,
+    "status": "available",
+    "busy_until_min": 0
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "backend_label": "offline",
+  "events_file": null,
+  "metrics": {
+    "agent_calls": 131,
+    "ambulance_utilisation": 0.9634444444444444,
+    "black_victims": 2,
+    "conflicts": 8,
+    "conflicts_by_kind": {
+      "BED_REJECTION": 6,
+      "FLOAT_STAFF": 2,
+      "FLOAT_STAFF_COMPETITION": 0,
+      "NO_ACCEPTING_HOSPITAL": 0,
+      "RESERVE_RELEASE": 0,
+      "UNIT_CONTENTION": 0
+    },
+    "controller_omissions": 0,
+    "deteriorated": 0,
+    "diversions": 0,
+    "doctor_utilisation": 0.3348214285714286,
+    "door_to_doctor_mean_min": 0.2236842105263158,
+    "er_utilisation": 0.45086805555555554,
+    "fallbacks": 0,
+    "float_staff_lent": 1,
+    "hospital_full_on_arrival": 0,
+    "incidents": 14,
+    "incidents_reached": 13,
+    "messages_by_type": {
+      "ACCEPT": 23,
+      "COMMIT": 2,
+      "COUNTER": 2,
+      "ESCALATE": 0,
+      "INFORM": 40,
+      "PRIORITY_REPORT": 37,
+      "PROPOSE": 32,
+      "REJECT": 8,
+      "REQUEST": 2
+    },
+    "messages_total": 146,
+    "nurse_utilisation": 0.2000925925925926,
+    "patients_total": 44,
+    "red_in_window": 6,
+    "red_in_window_rate": 0.5454545454545454,
+    "red_response_mean_min": 17.28181818181818,
+    "red_total": 11,
+    "resolutions": {
+      "ACCEPTED": 17,
+      "ACCEPTED_AFTER_REJECT": 6,
+      "COUNTER_DECLINED": 0,
+      "COUNTER_GRANTED": 1,
+      "ENGINE_REJECTED": 0,
+      "FORCED_ADMISSION": 1,
+      "KEPT_ASSIGNMENT": 0,
+      "RA_COMMIT": 0
+    },
+    "responder_utilisation": 0.5798148148148149,
+    "response_time_mean_min": 21.53846153846154,
+    "response_time_p90_min": 46.96000000000001,
+    "served_rate": 0.8636363636363636,
+    "survival_weighted_score": 0.7528089887640449,
+    "unserved_critical": 2,
+    "victims_served": 38
+  },
+  "run_id": "constrained-full-no-escalation-offline-s1018-r0",
+  "spec": {
+    "backend": "offline",
+    "condition": "full-no-escalation",
+    "model": null,
+    "repeat": 0,
+    "scenario": "constrained",
+    "seed": 1018
+  }
+}

@@ -1,0 +1,33 @@
+[project]
+name = "emergency-response-mas"
+version = "0.2.0"
+description = "Intelligent agents and multi-agent systems for emergency response coordination (CSYE 7380)."
+readme = "README.md"
+requires-python = ">=3.14"
+authors = [{ name = "Shubham Bagwe" }]
+# Pinned versions are documented in requirements.txt. The project is run from
+# the repository root (python -m emergency_sim...) and is not pip-installed.
+dependencies = [
+    "openai-agents==0.24.0",
+    "openai==3.37.0",
+    "pydantic==2.14.1",
+    "streamlit==1.66.1",
+    "plotly==7.1.0",
+    "pandas==3.1.0",
+    "numpy==2.5.4",
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = [
+    "slow: long-running tests such as the multi-seed evaluation grid (deselect with -m 'not slow')",
+]
+# openai-agents 0.24 calls asyncio.get_event_loop_policy() in Runner.run_sync,
+# which Python 3.14 deprecates; it is third-party and harmless until 3.16.
+filterwarnings = [
+    "ignore:'asyncio.get_event_loop_policy' is deprecated:DeprecationWarning:agents",
+]

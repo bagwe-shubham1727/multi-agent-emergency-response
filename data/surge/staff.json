@@ -1,0 +1,392 @@
+[
+  {
+    "id": "DR-H1-1",
+    "role": "doctor",
+    "home": "H1",
+    "skills": [
+      "emergency",
+      "neuro",
+      "trauma"
+    ],
+    "max_patients": 4,
+    "load_t0": 1,
+    "shift_end_min": 300
+  },
+  {
+    "id": "DR-H1-2",
+    "role": "doctor",
+    "home": "H1",
+    "skills": [
+      "burns",
+      "cardiac",
+      "emergency"
+    ],
+    "max_patients": 4,
+    "load_t0": 2,
+    "shift_end_min": 120
+  },
+  {
+    "id": "DR-H1-3",
+    "role": "doctor",
+    "home": "H1",
+    "skills": [
+      "cardiac",
+      "emergency",
+      "neuro"
+    ],
+    "max_patients": 4,
+    "load_t0": 1,
+    "shift_end_min": 120
+  },
+  {
+    "id": "RN-H1-1",
+    "role": "nurse",
+    "home": "H1",
+    "skills": [
+      "burns",
+      "emergency"
+    ],
+    "max_patients": 3,
+    "load_t0": 2,
+    "shift_end_min": 240
+  },
+  {
+    "id": "RN-H1-2",
+    "role": "nurse",
+    "home": "H1",
+    "skills": [
+      "emergency",
+      "icu"
+    ],
+    "max_patients": 3,
+    "load_t0": 1,
+    "shift_end_min": 120
+  },
+  {
+    "id": "RN-H1-3",
+    "role": "nurse",
+    "home": "H1",
+    "skills": [
+      "emergency",
+      "trauma"
+    ],
+    "max_patients": 3,
+    "load_t0": 0,
+    "shift_end_min": 120
+  },
+  {
+    "id": "RN-H1-4",
+    "role": "nurse",
+    "home": "H1",
+    "skills": [
+      "emergency",
+      "trauma"
+    ],
+    "max_patients": 3,
+    "load_t0": 0,
+    "shift_end_min": 300
+  },
+  {
+    "id": "RN-H1-5",
+    "role": "nurse",
+    "home": "H1",
+    "skills": [
+      "burns",
+      "emergency"
+    ],
+    "max_patients": 3,
+    "load_t0": 2,
+    "shift_end_min": 180
+  },
+  {
+    "id": "RN-H1-6",
+    "role": "nurse",
+    "home": "H1",
+    "skills": [
+      "emergency",
+      "icu"
+    ],
+    "max_patients": 3,
+    "load_t0": 1,
+    "shift_end_min": 240
+  },
+  {
+    "id": "DR-H2-1",
+    "role": "doctor",
+    "home": "H2",
+    "skills": [
+      "cardiac",
+      "emergency",
+      "trauma"
+    ],
+    "max_patients": 4,
+    "load_t0": 0,
+    "shift_end_min": 240
+  },
+  {
+    "id": "DR-H2-2",
+    "role": "doctor",
+    "home": "H2",
+    "skills": [
+      "emergency",
+      "neuro"
+    ],
+    "max_patients": 4,
+    "load_t0": 0,
+    "shift_end_min": 300
+  },
+  {
+    "id": "DR-H2-3",
+    "role": "doctor",
+    "home": "H2",
+    "skills": [
+      "emergency",
+      "neuro",
+      "trauma"
+    ],
+    "max_patients": 4,
+    "load_t0": 0,
+    "shift_end_min": 300
+  },
+  {
+    "id": "RN-H2-1",
+    "role": "nurse",
+    "home": "H2",
+    "skills": [
+      "emergency",
+      "icu"
+    ],
+    "max_patients": 3,
+    "load_t0": 0,
+    "shift_end_min": 300
+  },
+  {
+    "id": "RN-H2-2",
+    "role": "nurse",
+    "home": "H2",
+    "skills": [
+      "emergency",
+      "trauma"
+    ],
+    "max_patients": 3,
+    "load_t0": 1,
+    "shift_end_min": 180
+  },
+  {
+    "id": "RN-H2-3",
+    "role": "nurse",
+    "home": "H2",
+    "skills": [
+      "emergency",
+      "trauma"
+    ],
+    "max_patients": 3,
+    "load_t0": 0,
+    "shift_end_min": 120
+  },
+  {
+    "id": "RN-H2-4",
+    "role": "nurse",
+    "home": "H2",
+    "skills": [
+      "emergency",
+      "icu"
+    ],
+    "max_patients": 3,
+    "load_t0": 0,
+    "shift_end_min": 300
+  },
+  {
+    "id": "RN-H2-5",
+    "role": "nurse",
+    "home": "H2",
+    "skills": [
+      "emergency",
+      "trauma"
+    ],
+    "max_patients": 3,
+    "load_t0": 0,
+    "shift_end_min": 300
+  },
+  {
+    "id": "RN-H2-6",
+    "role": "nurse",
+    "home": "H2",
+    "skills": [
+      "emergency",
+      "trauma"
+    ],
+    "max_patients": 3,
+    "load_t0": 0,
+    "shift_end_min": 180
+  },
+  {
+    "id": "DR-H3-1",
+    "role": "doctor",
+    "home": "H3",
+    "skills": [
+      "emergency",
+      "pediatric"
+    ],
+    "max_patients": 4,
+    "load_t0": 1,
+    "shift_end_min": 300
+  },
+  {
+    "id": "DR-H3-2",
+    "role": "doctor",
+    "home": "H3",
+    "skills": [
+      "emergency"
+    ],
+    "max_patients": 4,
+    "load_t0": 1,
+    "shift_end_min": 240
+  },
+  {
+    "id": "DR-H3-3",
+    "role": "doctor",
+    "home": "H3",
+    "skills": [
+      "emergency",
+      "pediatric"
+    ],
+    "max_patients": 4,
+    "load_t0": 0,
+    "shift_end_min": 300
+  },
+  {
+    "id": "RN-H3-1",
+    "role": "nurse",
+    "home": "H3",
+    "skills": [
+      "emergency",
+      "icu"
+    ],
+    "max_patients": 3,
+    "load_t0": 1,
+    "shift_end_min": 240
+  },
+  {
+    "id": "RN-H3-2",
+    "role": "nurse",
+    "home": "H3",
+    "skills": [
+      "emergency",
+      "pediatric"
+    ],
+    "max_patients": 3,
+    "load_t0": 2,
+    "shift_end_min": 240
+  },
+  {
+    "id": "RN-H3-3",
+    "role": "nurse",
+    "home": "H3",
+    "skills": [
+      "emergency",
+      "pediatric"
+    ],
+    "max_patients": 3,
+    "load_t0": 0,
+    "shift_end_min": 120
+  },
+  {
+    "id": "RN-H3-4",
+    "role": "nurse",
+    "home": "H3",
+    "skills": [
+      "emergency",
+      "pediatric"
+    ],
+    "max_patients": 3,
+    "load_t0": 2,
+    "shift_end_min": 180
+  },
+  {
+    "id": "RN-H3-5",
+    "role": "nurse",
+    "home": "H3",
+    "skills": [
+      "emergency",
+      "pediatric"
+    ],
+    "max_patients": 3,
+    "load_t0": 2,
+    "shift_end_min": 240
+  },
+  {
+    "id": "RN-H3-6",
+    "role": "nurse",
+    "home": "H3",
+    "skills": [
+      "emergency",
+      "pediatric"
+    ],
+    "max_patients": 3,
+    "load_t0": 0,
+    "shift_end_min": 240
+  },
+  {
+    "id": "DR-FLOAT-1",
+    "role": "doctor",
+    "home": "FLOAT",
+    "skills": [
+      "emergency",
+      "pediatric",
+      "trauma"
+    ],
+    "max_patients": 4,
+    "load_t0": 1,
+    "shift_end_min": 180
+  },
+  {
+    "id": "DR-FLOAT-2",
+    "role": "doctor",
+    "home": "FLOAT",
+    "skills": [
+      "cardiac",
+      "emergency",
+      "trauma"
+    ],
+    "max_patients": 4,
+    "load_t0": 0,
+    "shift_end_min": 180
+  },
+  {
+    "id": "RN-FLOAT-1",
+    "role": "nurse",
+    "home": "FLOAT",
+    "skills": [
+      "emergency",
+      "trauma"
+    ],
+    "max_patients": 3,
+    "load_t0": 0,
+    "shift_end_min": 180
+  },
+  {
+    "id": "RN-FLOAT-2",
+    "role": "nurse",
+    "home": "FLOAT",
+    "skills": [
+      "emergency",
+      "icu"
+    ],
+    "max_patients": 3,
+    "load_t0": 1,
+    "shift_end_min": 240
+  },
+  {
+    "id": "RN-FLOAT-3",
+    "role": "nurse",
+    "home": "FLOAT",
+    "skills": [
+      "emergency",
+      "pediatric"
+    ],
+    "max_patients": 3,
+    "load_t0": 2,
+    "shift_end_min": 300
+  }
+]

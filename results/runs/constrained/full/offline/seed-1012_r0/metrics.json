@@ -1,0 +1,73 @@
+{
+  "backend_label": "offline",
+  "events_file": null,
+  "metrics": {
+    "agent_calls": 127,
+    "ambulance_utilisation": 0.8733333333333333,
+    "black_victims": 1,
+    "conflicts": 12,
+    "conflicts_by_kind": {
+      "BED_REJECTION": 0,
+      "FLOAT_STAFF": 3,
+      "FLOAT_STAFF_COMPETITION": 0,
+      "NO_ACCEPTING_HOSPITAL": 0,
+      "RESERVE_RELEASE": 1,
+      "UNIT_CONTENTION": 8
+    },
+    "controller_omissions": 0,
+    "deteriorated": 1,
+    "diversions": 2,
+    "doctor_utilisation": 0.27225529100529094,
+    "door_to_doctor_mean_min": 1.2249999999999996,
+    "er_utilisation": 0.4973958333333333,
+    "fallbacks": 0,
+    "float_staff_lent": 1,
+    "hospital_full_on_arrival": 0,
+    "incidents": 14,
+    "incidents_reached": 12,
+    "messages_by_type": {
+      "ACCEPT": 23,
+      "COMMIT": 10,
+      "COUNTER": 4,
+      "ESCALATE": 9,
+      "INFORM": 32,
+      "PRIORITY_REPORT": 37,
+      "PROPOSE": 27,
+      "REJECT": 3,
+      "REQUEST": 3
+    },
+    "messages_total": 148,
+    "nurse_utilisation": 0.1612037037037037,
+    "patients_total": 43,
+    "red_in_window": 1,
+    "red_in_window_rate": 0.0625,
+    "red_response_mean_min": 60.35714285714287,
+    "red_total": 16,
+    "resolutions": {
+      "ACCEPTED": 20,
+      "ACCEPTED_AFTER_REJECT": 3,
+      "COUNTER_DECLINED": 0,
+      "COUNTER_GRANTED": 1,
+      "ENGINE_REJECTED": 0,
+      "FORCED_ADMISSION": 0,
+      "KEPT_ASSIGNMENT": 1,
+      "RA_COMMIT": 7
+    },
+    "responder_utilisation": 0.7387962962962963,
+    "response_time_mean_min": 43.75,
+    "response_time_p90_min": 77.78,
+    "served_rate": 0.7441860465116279,
+    "survival_weighted_score": 0.35294117647058826,
+    "unserved_critical": 5,
+    "victims_served": 32
+  },
+  "run_id": "constrained-full-offline-s1012-r0",
+  "spec": {
+    "backend": "offline",
+    "condition": "full",
+    "model": null,
+    "repeat": 0,
+    "scenario": "constrained",
+    "seed": 1012
+  }
+}

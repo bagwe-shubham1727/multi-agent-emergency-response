@@ -1,0 +1,61 @@
+[
+  {
+    "id": "H1",
+    "name": "Riverside General Hospital",
+    "x": 6.0,
+    "y": 13.5,
+    "trauma_level": 1,
+    "capabilities": [
+      "trauma",
+      "burns",
+      "neuro",
+      "cardiac",
+      "general"
+    ],
+    "er_capacity": 14,
+    "icu_beds": 6,
+    "critical_reserve": 2,
+    "er_occupied_t0": 6,
+    "icu_occupied_t0": 3,
+    "er_free_t0": 8,
+    "intersection": "Grove St & 4th Ave"
+  },
+  {
+    "id": "H2",
+    "name": "St. Agnes Medical Center",
+    "x": 14.5,
+    "y": 12.0,
+    "trauma_level": 2,
+    "capabilities": [
+      "cardiac",
+      "neuro",
+      "trauma",
+      "general"
+    ],
+    "er_capacity": 10,
+    "icu_beds": 4,
+    "critical_reserve": 1,
+    "er_occupied_t0": 5,
+    "icu_occupied_t0": 2,
+    "er_free_t0": 5,
+    "intersection": "Grove St & 8th Ave"
+  },
+  {
+    "id": "H3",
+    "name": "Eastgate Community Hospital",
+    "x": 12.0,
+    "y": 4.0,
+    "trauma_level": 3,
+    "capabilities": [
+      "pediatric",
+      "general"
+    ],
+    "er_capacity": 8,
+    "icu_beds": 2,
+    "critical_reserve": 1,
+    "er_occupied_t0": 3,
+    "icu_occupied_t0": 1,
+    "er_free_t0": 5,
+    "intersection": "Cedar St & 7th Ave"
+  }
+]

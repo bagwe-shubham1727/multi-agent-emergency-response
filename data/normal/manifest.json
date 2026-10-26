@@ -1,0 +1,18 @@
+{
+  "scenario": "normal",
+  "seed": 7380,
+  "generator_version": "1.2.0",
+  "horizon_min": 180,
+  "python": "3.14.5",
+  "sha256": {
+    "ambulances.json": "6e136181af9eddb58b52fcfc0c11aa5e0e35d1d07e52c0a8d12c266a19d85e63",
+    "hospitals.json": "94813a9062ac5d5f98e21d9f4d8708917a836dbb89ef105b72d6d5b8542efcc5",
+    "incidents.json": "88a2ad8b41f1cfdcaadae21c2ec03f822303f6f37e5782d3bc4f5c523a9d7674",
+    "responders.json": "eccaea1fd3f22b9018f836083ffae14c190a870c84db0a8ffa9dc0f71d0c0160",
+    "staff.json": "8ca26b8c61eaaca0df3c67bd6f7fd9ee708a6ff77918fee937270de7d61a7d03",
+    "stations.json": "d7a16b076d8a06948f699223b16f8e62202affabbc88bcc772b9751da18906fd",
+    "summary.json": "1a8af374c00e0979e910e47d1e8a431ce019f47831ec852ceb2e6193869b26a7",
+    "travel_times.csv": "218bd8269d76a1bde1aa0d4b428b26cda1e6dec6d2e10940bbcb3d44d2993476",
+    "victims.csv": "1f86c2e50747d65178ce39b5caaa8c119f275b6879cb44f432d4a6913dd4b354"
+  }
+}

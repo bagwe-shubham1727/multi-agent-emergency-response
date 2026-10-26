@@ -1,0 +1,39 @@
+{
+  "scenario": "constrained",
+  "description": "Exactly the surge incidents with one ambulance out of service, fuller ERs and fewer staff.",
+  "incidents": 14,
+  "victims": 39,
+  "victims_by_triage": {
+    "RED": 12,
+    "YELLOW": 17,
+    "GREEN": 9,
+    "BLACK": 1
+  },
+  "victims_by_capability": {
+    "cardiac": 5,
+    "general": 14,
+    "neuro": 4,
+    "trauma": 15
+  },
+  "reported_victims_total": 42,
+  "mci_cluster": {
+    "incidents": 3,
+    "span_min": 6,
+    "victims": 18,
+    "patients": 17,
+    "red": 4,
+    "seats": 10,
+    "als_units": 3
+  },
+  "hospitals": 3,
+  "er_beds_total": 32,
+  "er_beds_free_t0": 10,
+  "ambulances": 6,
+  "ambulances_available_t0": 3,
+  "als_available_t0": 3,
+  "doctors": 7,
+  "nurses": 17,
+  "float_pool": 3,
+  "responder_teams": 6,
+  "red_to_free_er_ratio": 1.2
+}

@@ -1,0 +1,418 @@
+[
+  {
+    "incident_id": "INC-01",
+    "type": "stroke",
+    "t_report_min": 7,
+    "x": 7.6,
+    "y": 7.6,
+    "intersection": "Dogwood St & 4th Ave",
+    "congestion": 1.22,
+    "reported_victims": 1,
+    "caller_report": "Caller at Dogwood St & 4th Ave reports an older adult with slurred speech; about 1 person hurt; one side of the face is drooping.",
+    "required_responder_capabilities": [],
+    "true_victims": 1,
+    "worst_triage": "RED",
+    "time_sensitivity_min": 26,
+    "mci_cluster": false,
+    "victims": [
+      {
+        "victim_id": "INC-01-V1",
+        "condition": "stroke symptoms",
+        "triage": "RED",
+        "required_capability": "neuro",
+        "needs_als": true,
+        "needs_decon": false,
+        "golden_window_min": 26,
+        "deteriorates_to_red_at_min": null
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-02",
+    "type": "fall",
+    "t_report_min": 29,
+    "x": 1.4,
+    "y": 8.4,
+    "intersection": "Elm St & 1st Ave",
+    "congestion": 1.0,
+    "reported_victims": 1,
+    "caller_report": "Caller at Elm St & 1st Ave reports an elderly person who fell down stairs; about 1 person hurt; they hit their head and are not making sense.",
+    "required_responder_capabilities": [],
+    "true_victims": 1,
+    "worst_triage": "RED",
+    "time_sensitivity_min": 26,
+    "mci_cluster": false,
+    "victims": [
+      {
+        "victim_id": "INC-02-V1",
+        "condition": "head injury (TBI)",
+        "triage": "RED",
+        "required_capability": "neuro",
+        "needs_als": true,
+        "needs_decon": false,
+        "golden_window_min": 26,
+        "deteriorates_to_red_at_min": null
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-03",
+    "type": "cardiac_event",
+    "t_report_min": 31,
+    "x": 4.1,
+    "y": 2.6,
+    "intersection": "Birch St & 3rd Ave",
+    "congestion": 1.0,
+    "reported_victims": 1,
+    "caller_report": "Caller at Birch St & 3rd Ave reports a person who collapsed clutching their chest; about 1 person hurt; they are awake but sweating and in pain.",
+    "required_responder_capabilities": [],
+    "true_victims": 1,
+    "worst_triage": "YELLOW",
+    "time_sensitivity_min": 139,
+    "mci_cluster": false,
+    "victims": [
+      {
+        "victim_id": "INC-03-V1",
+        "condition": "chest pain (suspected MI)",
+        "triage": "YELLOW",
+        "required_capability": "cardiac",
+        "needs_als": false,
+        "needs_decon": false,
+        "golden_window_min": 139,
+        "deteriorates_to_red_at_min": 83
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-04",
+    "type": "structural_collapse",
+    "t_report_min": 47,
+    "x": 9.0,
+    "y": 6.7,
+    "intersection": "Dogwood St & 5th Ave",
+    "congestion": 1.21,
+    "reported_victims": 6,
+    "caller_report": "Caller at Dogwood St & 5th Ave reports part of a building has collapsed; about 6 people hurt; people are trapped under the rubble.",
+    "required_responder_capabilities": [
+      "heavy_rescue",
+      "scene_control"
+    ],
+    "true_victims": 4,
+    "worst_triage": "RED",
+    "time_sensitivity_min": 39,
+    "mci_cluster": false,
+    "victims": [
+      {
+        "victim_id": "INC-04-V1",
+        "condition": "lacerations",
+        "triage": "GREEN",
+        "required_capability": "general",
+        "needs_als": false,
+        "needs_decon": false,
+        "golden_window_min": 480,
+        "deteriorates_to_red_at_min": null
+      },
+      {
+        "victim_id": "INC-04-V2",
+        "condition": "lacerations",
+        "triage": "YELLOW",
+        "required_capability": "general",
+        "needs_als": false,
+        "needs_decon": false,
+        "golden_window_min": 146,
+        "deteriorates_to_red_at_min": 88
+      },
+      {
+        "victim_id": "INC-04-V3",
+        "condition": "lacerations",
+        "triage": "GREEN",
+        "required_capability": "general",
+        "needs_als": false,
+        "needs_decon": false,
+        "golden_window_min": 480,
+        "deteriorates_to_red_at_min": null
+      },
+      {
+        "victim_id": "INC-04-V4",
+        "condition": "head injury (TBI)",
+        "triage": "RED",
+        "required_capability": "neuro",
+        "needs_als": true,
+        "needs_decon": false,
+        "golden_window_min": 39,
+        "deteriorates_to_red_at_min": null
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-05",
+    "type": "multi_vehicle_collision",
+    "t_report_min": 97,
+    "x": 9.2,
+    "y": 7.7,
+    "intersection": "Dogwood St & 5th Ave",
+    "congestion": 1.3,
+    "reported_victims": 8,
+    "caller_report": "Caller at Dogwood St & 5th Ave reports a multi-car pile-up; about 8 people hurt; people are hurt but out of the cars and talking.",
+    "required_responder_capabilities": [
+      "extrication",
+      "scene_control"
+    ],
+    "true_victims": 7,
+    "worst_triage": "RED",
+    "time_sensitivity_min": 32,
+    "mci_cluster": false,
+    "victims": [
+      {
+        "victim_id": "INC-05-V1",
+        "condition": "blunt chest trauma",
+        "triage": "YELLOW",
+        "required_capability": "trauma",
+        "needs_als": false,
+        "needs_decon": false,
+        "golden_window_min": 218,
+        "deteriorates_to_red_at_min": 131
+      },
+      {
+        "victim_id": "INC-05-V2",
+        "condition": "long-bone fracture",
+        "triage": "YELLOW",
+        "required_capability": "trauma",
+        "needs_als": false,
+        "needs_decon": false,
+        "golden_window_min": 173,
+        "deteriorates_to_red_at_min": 104
+      },
+      {
+        "victim_id": "INC-05-V3",
+        "condition": "long-bone fracture",
+        "triage": "YELLOW",
+        "required_capability": "trauma",
+        "needs_als": false,
+        "needs_decon": false,
+        "golden_window_min": 224,
+        "deteriorates_to_red_at_min": 134
+      },
+      {
+        "victim_id": "INC-05-V4",
+        "condition": "sprain / whiplash",
+        "triage": "GREEN",
+        "required_capability": "general",
+        "needs_als": false,
+        "needs_decon": false,
+        "golden_window_min": 480,
+        "deteriorates_to_red_at_min": null
+      },
+      {
+        "victim_id": "INC-05-V5",
+        "condition": "head injury (TBI)",
+        "triage": "RED",
+        "required_capability": "neuro",
+        "needs_als": true,
+        "needs_decon": false,
+        "golden_window_min": 32,
+        "deteriorates_to_red_at_min": null
+      },
+      {
+        "victim_id": "INC-05-V6",
+        "condition": "blunt chest trauma",
+        "triage": "YELLOW",
+        "required_capability": "trauma",
+        "needs_als": false,
+        "needs_decon": false,
+        "golden_window_min": 222,
+        "deteriorates_to_red_at_min": 133
+      },
+      {
+        "victim_id": "INC-05-V7",
+        "condition": "crush injury",
+        "triage": "YELLOW",
+        "required_capability": "trauma",
+        "needs_als": false,
+        "needs_decon": false,
+        "golden_window_min": 185,
+        "deteriorates_to_red_at_min": 111
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-06",
+    "type": "cardiac_event",
+    "t_report_min": 104,
+    "x": 10.2,
+    "y": 5.5,
+    "intersection": "Cedar St & 6th Ave",
+    "congestion": 1.12,
+    "reported_victims": 1,
+    "caller_report": "Caller at Cedar St & 6th Ave reports a person who collapsed clutching their chest; about 1 person hurt; they are not responding and a bystander is starting CPR.",
+    "required_responder_capabilities": [],
+    "true_victims": 1,
+    "worst_triage": "RED",
+    "time_sensitivity_min": 8,
+    "mci_cluster": false,
+    "victims": [
+      {
+        "victim_id": "INC-06-V1",
+        "condition": "cardiac arrest",
+        "triage": "RED",
+        "required_capability": "cardiac",
+        "needs_als": true,
+        "needs_decon": false,
+        "golden_window_min": 8,
+        "deteriorates_to_red_at_min": null
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-07",
+    "type": "cardiac_event",
+    "t_report_min": 106,
+    "x": 8.2,
+    "y": 16.8,
+    "intersection": "Ivy St & 5th Ave",
+    "congestion": 1.0,
+    "reported_victims": 1,
+    "caller_report": "Caller at Ivy St & 5th Ave reports a person who collapsed clutching their chest; about 1 person hurt; they are awake but sweating and in pain.",
+    "required_responder_capabilities": [],
+    "true_victims": 1,
+    "worst_triage": "YELLOW",
+    "time_sensitivity_min": 127,
+    "mci_cluster": false,
+    "victims": [
+      {
+        "victim_id": "INC-07-V1",
+        "condition": "chest pain (suspected MI)",
+        "triage": "YELLOW",
+        "required_capability": "cardiac",
+        "needs_als": false,
+        "needs_decon": false,
+        "golden_window_min": 127,
+        "deteriorates_to_red_at_min": 76
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-08",
+    "type": "fall",
+    "t_report_min": 110,
+    "x": 15.2,
+    "y": 14.2,
+    "intersection": "Hazel St & 8th Ave",
+    "congestion": 1.0,
+    "reported_victims": 1,
+    "caller_report": "Caller at Hazel St & 8th Ave reports an elderly person who fell down stairs; about 1 person hurt; they cannot get up.",
+    "required_responder_capabilities": [],
+    "true_victims": 1,
+    "worst_triage": "YELLOW",
+    "time_sensitivity_min": 157,
+    "mci_cluster": false,
+    "victims": [
+      {
+        "victim_id": "INC-08-V1",
+        "condition": "hip fracture",
+        "triage": "YELLOW",
+        "required_capability": "trauma",
+        "needs_als": false,
+        "needs_decon": false,
+        "golden_window_min": 157,
+        "deteriorates_to_red_at_min": 94
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-09",
+    "type": "cardiac_event",
+    "t_report_min": 117,
+    "x": 7.9,
+    "y": 9.0,
+    "intersection": "Elm St & 4th Ave",
+    "congestion": 1.31,
+    "reported_victims": 1,
+    "caller_report": "Caller at Elm St & 4th Ave reports a person who collapsed clutching their chest; about 1 person hurt; they are awake but sweating and in pain.",
+    "required_responder_capabilities": [],
+    "true_victims": 1,
+    "worst_triage": "RED",
+    "time_sensitivity_min": 10,
+    "mci_cluster": false,
+    "victims": [
+      {
+        "victim_id": "INC-09-V1",
+        "condition": "cardiac arrest",
+        "triage": "RED",
+        "required_capability": "cardiac",
+        "needs_als": true,
+        "needs_decon": false,
+        "golden_window_min": 10,
+        "deteriorates_to_red_at_min": null
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-10",
+    "type": "assault",
+    "t_report_min": 135,
+    "x": 12.4,
+    "y": 11.5,
+    "intersection": "Fir St & 7th Ave",
+    "congestion": 1.26,
+    "reported_victims": 2,
+    "caller_report": "Caller at Fir St & 7th Ave reports a fight with a person stabbed; about 2 people hurt; the victim is bleeding but talking.",
+    "required_responder_capabilities": [
+      "scene_control"
+    ],
+    "true_victims": 2,
+    "worst_triage": "RED",
+    "time_sensitivity_min": 53,
+    "mci_cluster": false,
+    "victims": [
+      {
+        "victim_id": "INC-10-V1",
+        "condition": "stab wound",
+        "triage": "RED",
+        "required_capability": "trauma",
+        "needs_als": true,
+        "needs_decon": false,
+        "golden_window_min": 53,
+        "deteriorates_to_red_at_min": null
+      },
+      {
+        "victim_id": "INC-10-V2",
+        "condition": "lacerations",
+        "triage": "GREEN",
+        "required_capability": "general",
+        "needs_als": false,
+        "needs_decon": false,
+        "golden_window_min": 480,
+        "deteriorates_to_red_at_min": null
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-11",
+    "type": "cardiac_event",
+    "t_report_min": 137,
+    "x": 3.0,
+    "y": 1.4,
+    "intersection": "Ash St & 2nd Ave",
+    "congestion": 1.0,
+    "reported_victims": 1,
+    "caller_report": "Caller at Ash St & 2nd Ave reports a person who collapsed clutching their chest; about 1 person hurt; they are not responding and a bystander is starting CPR.",
+    "required_responder_capabilities": [],
+    "true_victims": 1,
+    "worst_triage": "RED",
+    "time_sensitivity_min": 11,
+    "mci_cluster": false,
+    "victims": [
+      {
+        "victim_id": "INC-11-V1",
+        "condition": "cardiac arrest",
+        "triage": "RED",
+        "required_capability": "cardiac",
+        "needs_als": true,
+        "needs_decon": false,
+        "golden_window_min": 11,
+        "deteriorates_to_red_at_min": null
+      }
+    ]
+  }
+]

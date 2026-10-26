@@ -1,0 +1,318 @@
+{
+  "constrained": [
+    {
+      "check": "reproducible from seed",
+      "passed": true,
+      "detail": "seed 7380; differing: none"
+    },
+    {
+      "check": "files match manifest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "incident ids unique and time-ordered",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "incidents inside map and horizon",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "true_victims matches victim list",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every victim's need is treatable somewhere",
+      "passed": true,
+      "detail": "missing: none"
+    },
+    {
+      "check": "RED victims need ALS; only RED do",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "golden windows consistent with triage",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "hospital occupancy within capacity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "staff assigned to real hospitals or float pool",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every hospital has an emergency physician",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every hospital capability has a doctor with that skill",
+      "passed": true,
+      "detail": "missing: none"
+    },
+    {
+      "check": "nurse skills match their hospital",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every incident's responder need exists",
+      "passed": true,
+      "detail": "missing: none"
+    },
+    {
+      "check": "at least one ALS ambulance available at t=0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "travel matrix complete and positive",
+      "passed": true,
+      "detail": "380 rows for 20 nodes"
+    },
+    {
+      "check": "travel times symmetric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "MCI cluster creates contention",
+      "passed": true,
+      "detail": "17 patients in 6 min vs 10 seats; 4 RED vs 3 ALS units"
+    }
+  ],
+  "normal": [
+    {
+      "check": "reproducible from seed",
+      "passed": true,
+      "detail": "seed 7380; differing: none"
+    },
+    {
+      "check": "files match manifest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "incident ids unique and time-ordered",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "incidents inside map and horizon",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "true_victims matches victim list",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every victim's need is treatable somewhere",
+      "passed": true,
+      "detail": "missing: none"
+    },
+    {
+      "check": "RED victims need ALS; only RED do",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "golden windows consistent with triage",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "hospital occupancy within capacity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "staff assigned to real hospitals or float pool",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every hospital has an emergency physician",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every hospital capability has a doctor with that skill",
+      "passed": true,
+      "detail": "missing: none"
+    },
+    {
+      "check": "nurse skills match their hospital",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every incident's responder need exists",
+      "passed": true,
+      "detail": "missing: none"
+    },
+    {
+      "check": "at least one ALS ambulance available at t=0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "travel matrix complete and positive",
+      "passed": true,
+      "detail": "272 rows for 17 nodes"
+    },
+    {
+      "check": "travel times symmetric",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "surge": [
+    {
+      "check": "reproducible from seed",
+      "passed": true,
+      "detail": "seed 7380; differing: none"
+    },
+    {
+      "check": "files match manifest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "incident ids unique and time-ordered",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "incidents inside map and horizon",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "true_victims matches victim list",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every victim's need is treatable somewhere",
+      "passed": true,
+      "detail": "missing: none"
+    },
+    {
+      "check": "RED victims need ALS; only RED do",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "golden windows consistent with triage",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "hospital occupancy within capacity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "staff assigned to real hospitals or float pool",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every hospital has an emergency physician",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every hospital capability has a doctor with that skill",
+      "passed": true,
+      "detail": "missing: none"
+    },
+    {
+      "check": "nurse skills match their hospital",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every incident's responder need exists",
+      "passed": true,
+      "detail": "missing: none"
+    },
+    {
+      "check": "at least one ALS ambulance available at t=0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "travel matrix complete and positive",
+      "passed": true,
+      "detail": "380 rows for 20 nodes"
+    },
+    {
+      "check": "travel times symmetric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "MCI cluster creates contention",
+      "passed": true,
+      "detail": "17 patients in 6 min vs 12 seats; 4 RED vs 3 ALS units"
+    }
+  ],
+  "cross_scenario": [
+    {
+      "check": "constrained has exactly the surge incidents",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "surge = normal incidents + cluster",
+      "passed": true,
+      "detail": "11 base incidents"
+    },
+    {
+      "check": "constrained staff is a subset of normal staff",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "shared incidents have identical caller reports",
+      "passed": true,
+      "detail": "normal/surge: 11 shared, normal/constrained: 11 shared, surge/constrained: 14 shared; differing: none"
+    }
+  ],
+  "caller_wording_vs_red": {
+    "constrained": {
+      "severe_red": 6,
+      "severe_not_red": 0,
+      "mild_red": 3,
+      "mild_not_red": 4,
+      "same_wording": 1
+    },
+    "normal": {
+      "severe_red": 4,
+      "severe_not_red": 0,
+      "mild_red": 3,
+      "mild_not_red": 3,
+      "same_wording": 1
+    },
+    "surge": {
+      "severe_red": 6,
+      "severe_not_red": 0,
+      "mild_red": 3,
+      "mild_not_red": 4,
+      "same_wording": 1
+    }
+  }
+}

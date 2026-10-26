@@ -1,0 +1,73 @@
+{
+  "backend_label": "offline",
+  "events_file": null,
+  "metrics": {
+    "agent_calls": 141,
+    "ambulance_utilisation": 0.9433333333333334,
+    "black_victims": 1,
+    "conflicts": 11,
+    "conflicts_by_kind": {
+      "BED_REJECTION": 2,
+      "FLOAT_STAFF": 3,
+      "FLOAT_STAFF_COMPETITION": 0,
+      "NO_ACCEPTING_HOSPITAL": 0,
+      "RESERVE_RELEASE": 1,
+      "UNIT_CONTENTION": 5
+    },
+    "controller_omissions": 0,
+    "deteriorated": 5,
+    "diversions": 0,
+    "doctor_utilisation": 0.3285052910052911,
+    "door_to_doctor_mean_min": 1.2538461538461536,
+    "er_utilisation": 0.4857638888888889,
+    "fallbacks": 0,
+    "float_staff_lent": 1,
+    "hospital_full_on_arrival": 0,
+    "incidents": 14,
+    "incidents_reached": 13,
+    "messages_by_type": {
+      "ACCEPT": 24,
+      "COMMIT": 9,
+      "COUNTER": 4,
+      "ESCALATE": 6,
+      "INFORM": 34,
+      "PRIORITY_REPORT": 41,
+      "PROPOSE": 30,
+      "REJECT": 4,
+      "REQUEST": 3
+    },
+    "messages_total": 155,
+    "nurse_utilisation": 0.22643097643097648,
+    "patients_total": 47,
+    "red_in_window": 6,
+    "red_in_window_rate": 0.3333333333333333,
+    "red_response_mean_min": 44.853846153846156,
+    "red_total": 18,
+    "resolutions": {
+      "ACCEPTED": 20,
+      "ACCEPTED_AFTER_REJECT": 4,
+      "COUNTER_DECLINED": 0,
+      "COUNTER_GRANTED": 2,
+      "ENGINE_REJECTED": 0,
+      "FORCED_ADMISSION": 0,
+      "KEPT_ASSIGNMENT": 0,
+      "RA_COMMIT": 5
+    },
+    "responder_utilisation": 0.6859259259259259,
+    "response_time_mean_min": 42.84615384615385,
+    "response_time_p90_min": 100.54000000000003,
+    "served_rate": 0.8297872340425532,
+    "survival_weighted_score": 0.5257731958762887,
+    "unserved_critical": 1,
+    "victims_served": 39
+  },
+  "run_id": "constrained-full-no-diversion-offline-s1009-r0",
+  "spec": {
+    "backend": "offline",
+    "condition": "full-no-diversion",
+    "model": null,
+    "repeat": 0,
+    "scenario": "constrained",
+    "seed": 1009
+  }
+}

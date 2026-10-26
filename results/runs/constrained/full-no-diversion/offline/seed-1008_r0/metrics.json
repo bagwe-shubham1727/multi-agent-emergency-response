@@ -1,0 +1,73 @@
+{
+  "backend_label": "offline",
+  "events_file": null,
+  "metrics": {
+    "agent_calls": 129,
+    "ambulance_utilisation": 0.9022222222222223,
+    "black_victims": 1,
+    "conflicts": 8,
+    "conflicts_by_kind": {
+      "BED_REJECTION": 0,
+      "FLOAT_STAFF": 3,
+      "FLOAT_STAFF_COMPETITION": 0,
+      "NO_ACCEPTING_HOSPITAL": 1,
+      "RESERVE_RELEASE": 1,
+      "UNIT_CONTENTION": 4
+    },
+    "controller_omissions": 0,
+    "deteriorated": 1,
+    "diversions": 0,
+    "doctor_utilisation": 0.26365740740740734,
+    "door_to_doctor_mean_min": 1.5199999999999998,
+    "er_utilisation": 0.4579861111111111,
+    "fallbacks": 0,
+    "float_staff_lent": 1,
+    "hospital_full_on_arrival": 0,
+    "incidents": 14,
+    "incidents_reached": 13,
+    "messages_by_type": {
+      "ACCEPT": 19,
+      "COMMIT": 7,
+      "COUNTER": 5,
+      "ESCALATE": 6,
+      "INFORM": 31,
+      "PRIORITY_REPORT": 35,
+      "PROPOSE": 24,
+      "REJECT": 4,
+      "REQUEST": 4
+    },
+    "messages_total": 135,
+    "nurse_utilisation": 0.19589506172839502,
+    "patients_total": 37,
+    "red_in_window": 4,
+    "red_in_window_rate": 0.36363636363636365,
+    "red_response_mean_min": 35.029999999999994,
+    "red_total": 11,
+    "resolutions": {
+      "ACCEPTED": 17,
+      "ACCEPTED_AFTER_REJECT": 2,
+      "COUNTER_DECLINED": 0,
+      "COUNTER_GRANTED": 1,
+      "ENGINE_REJECTED": 0,
+      "FORCED_ADMISSION": 0,
+      "KEPT_ASSIGNMENT": 0,
+      "RA_COMMIT": 5
+    },
+    "responder_utilisation": 0.6093518518518519,
+    "response_time_mean_min": 25.661538461538463,
+    "response_time_p90_min": 64.86000000000004,
+    "served_rate": 0.8108108108108109,
+    "survival_weighted_score": 0.5866666666666667,
+    "unserved_critical": 1,
+    "victims_served": 30
+  },
+  "run_id": "constrained-full-no-diversion-offline-s1008-r0",
+  "spec": {
+    "backend": "offline",
+    "condition": "full-no-diversion",
+    "model": null,
+    "repeat": 0,
+    "scenario": "constrained",
+    "seed": 1008
+  }
+}

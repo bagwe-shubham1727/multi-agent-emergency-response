@@ -1,0 +1,31 @@
+{
+  "scenario": "normal",
+  "description": "The 11 base incidents, independent of each other, with full resources.",
+  "incidents": 11,
+  "victims": 21,
+  "victims_by_triage": {
+    "RED": 8,
+    "YELLOW": 9,
+    "GREEN": 4,
+    "BLACK": 0
+  },
+  "victims_by_capability": {
+    "cardiac": 5,
+    "general": 5,
+    "neuro": 4,
+    "trauma": 7
+  },
+  "reported_victims_total": 24,
+  "mci_cluster": null,
+  "hospitals": 3,
+  "er_beds_total": 32,
+  "er_beds_free_t0": 18,
+  "ambulances": 6,
+  "ambulances_available_t0": 5,
+  "als_available_t0": 3,
+  "doctors": 11,
+  "nurses": 21,
+  "float_pool": 5,
+  "responder_teams": 6,
+  "red_to_free_er_ratio": 0.44
+}

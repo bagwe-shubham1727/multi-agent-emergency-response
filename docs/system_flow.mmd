@@ -1,0 +1,149 @@
+%% Emergency Response Coordination - implemented system flow (phase 2)
+%% CSYE7380 Theory & Prac App AI Gen Model - Prof. Subrata Das - Shubham Bagwe
+%% Mirrors the code: engine -> DecisionPoint -> controller (B0, B0-cues or coordinator phases A/B/C)
+%% -> agents via DecisionBackend -> validated Actions -> engine; JSONL log -> metrics and dashboard.
+%% Design rationale: docs/simulation_design.md (section 8) and docs/implementation_plan.md.
+
+flowchart TD
+
+    %% ===================== DATA =====================
+    subgraph DATA["1. Scenario data - emergency_sim/datagen.py, geo.py, scenarios.py"]
+        direction TB
+        GEN["Seeded generator, stdlib only<br/>seed 7380 committed in data/<br/>other seeds regenerated in memory"]
+        SCN[("Scenario<br/>normal / surge / constrained<br/>hospitals, stations, ambulances, staff,<br/>responders, incidents with hidden victims")]
+        GEN --> SCN
+    end
+
+    %% ===================== ENGINE =====================
+    subgraph ENGINE["2. Engine - emergency_sim/engine - single source of truth"]
+        direction TB
+        EQ["Event queue<br/>heap of (t, priority, seq)<br/>deterministic tie-breaks"]
+        ST["World state<br/>units, victims, incidents,<br/>ER beds, queues, staff"]
+        ADV{"Engine.advance()<br/>pop events at next t"}
+        GUARD["Liveness guard<br/>loaded unit without destination<br/>gets nearest capable hospital"]
+        PV["PublicView<br/>no golden windows, no true victim counts,<br/>no victims of untriaged incidents"]
+        CHK{"rules.check_action<br/>legal?"}
+        FIN["Horizon reached (180 min)<br/>RunOutcomes"]
+        EQ --> ADV
+        GUARD --> ADV
+        ADV -- "events change" --> ST
+        ST -- "schedules new events" --> EQ
+        ST --> PV
+        CHK -- "ok: mutate" --> ST
+        ADV -- "t > horizon" --> FIN
+    end
+    SCN --> ST
+
+    DP["DecisionPoint(t, triggers)<br/>NEW_INCIDENT, SCENE_TRIAGED, PATIENTS_LOADED,<br/>UNIT_FREED, HOSPITAL_FULL_ON_ARRIVAL, DETERIORATION"]
+    ADV -- "triggers at t" --> DP
+
+    %% ===================== CONTROL =====================
+    subgraph CTRL["3. Controller - emergency_sim/control - Controller.handle(point, EnginePortAdapter)"]
+        direction TB
+        COND{"Condition"}
+        B0["B0 GreedyController<br/>FCFS incidents, nearest free unit,<br/>nearest capable hospital with a free bed,<br/>redirect if full; no messages, no agents"]
+        B0C["B0-cues GreedyController<br/>B0 plus caller-report assessment:<br/>assessed priority order, ALS first to suspected RED;<br/>no messages, no agents"]
+        subgraph COORD["AgentCoordinator - B1, Full and ablations"]
+            direction TB
+            PA["Phase A - assessment<br/>on new incident, triage, deterioration, loading<br/>PRIORITY_REPORT to dispatch"]
+            PB["Phase B - dispatch<br/>unit orders, INFORM to all<br/>Full: UNIT_CONTENTION or diversion case,<br/>ESCALATE then COMMIT"]
+            PC["Phase C - transport negotiation, max 3 rounds<br/>PROPOSE to hospital<br/>ACCEPT / REJECT / COUNTER"]
+            CASES["Cases for Resource Allocation<br/>FLOAT_STAFF via REQUEST<br/>RESERVE_RELEASE via ESCALATE (needs escalation)<br/>Full: NO_ACCEPTING_HOSPITAL"]
+            FORCED["B1 only: no accept after 3 rounds<br/>FORCED_ADMISSION at first-ranked hospital"]
+            VAL["Semantic validation<br/>illegal item or section replaced<br/>by the rule-based policy, FallbackNote logged"]
+            BUS["MessageBus<br/>M-0001, NEG-0001, CASE-0001"]
+            PA --> PB --> PC
+            PC -- "COUNTER" --> CASES
+            PC -- "REJECT: next hospital in ranking" --> PC
+            PC -- "no accept after 3 rounds" --> FORCED
+            PC -- "no accept after 3 rounds, Full" --> CASES
+        end
+        COND -- "b0" --> B0
+        COND -- "b0-cues" --> B0C
+        COND -- "b1, full, ablations" --> PA
+    end
+    DP --> COND
+    PV -. "read only" .-> B0
+    PV -. "read only" .-> B0C
+    PV -. "read only" .-> PA
+
+    %% ===================== AGENTS =====================
+    subgraph MAS["4. Agents - emergency_sim/mas - OpenAI Agents SDK"]
+        direction TB
+        BACK["DecisionBackend.decide(agent, payload)<br/>SDK Runner, strict Pydantic output_type,<br/>read-only function tools"]
+        IA["incident_assessment<br/>AssessmentOutput"]
+        DI["dispatch<br/>DispatchOutput"]
+        HO["hospital_H1, hospital_H2, hospital_H3<br/>HospitalOutput"]
+        RA["resource_allocation<br/>AllocationOutput"]
+        OFF["Offline backend - used for all results<br/>PolicyModel: rule-based policy inside Runner,<br/>one real tool round trip per call"]
+        LLM["LLM backend - implemented, tested with fake models<br/>OpenAI model from EMS_LLM_MODEL,<br/>policy fallback on model error"]
+        BACK --> OFF
+        BACK --> LLM
+        IA --- BACK
+        DI --- BACK
+        HO --- BACK
+        RA --- BACK
+    end
+    PA -- "AssessmentInput" --> IA
+    PB -- "DispatchInput" --> DI
+    PC -- "HospitalInput per hospital per round" --> HO
+    CASES -- "AllocationInput" --> RA
+    PB -- "contention case" --> RA
+    IA -- "typed output" --> VAL
+    DI -- "typed output" --> VAL
+    HO -- "typed output" --> VAL
+    RA -- "COMMIT or REJECT" --> VAL
+
+    %% ===================== ACTIONS =====================
+    ACT["Engine Actions<br/>DispatchUnit, DivertUnit,<br/>AssignTransport, LendStaff"]
+    APPLY["EnginePort.apply(action, actor)<br/>via EnginePortAdapter, engine/port.py"]
+    VAL --> ACT
+    FORCED --> ACT
+    B0 --> ACT
+    B0C --> ACT
+    ACT --> APPLY
+    APPLY --> CHK
+
+    %% ===================== LOG, EVALUATION, DASHBOARD =====================
+    subgraph OUTPUT["5. Event log, evaluation and dashboard"]
+        direction TB
+        LOG[("events.jsonl - one record per line<br/>run_start, snapshot every minute, sim_event,<br/>message, agent_call, action, run_end")]
+        MET["evaluation.metrics<br/>metrics.json per run"]
+        REP["evaluation.report<br/>summary.csv, paired.csv, summary.md<br/>paired sign tests on identical worlds"]
+        DASH["Streamlit + Plotly dashboard<br/>replays logs, never calls a model"]
+        V1["Map and incidents"]
+        V2["Resources: ambulances, responders,<br/>ER beds, doctors, nurses"]
+        V3["Agent activity: calls, decisions,<br/>tool calls, fallbacks, pending"]
+        V4["Negotiation history: threads<br/>and resolutions"]
+        V5["KPIs at time t and across seeds"]
+        LOG --> MET --> REP
+        LOG --> DASH
+        REP --> DASH
+        DASH --> V1
+        DASH --> V2
+        DASH --> V3
+        DASH --> V4
+        DASH --> V5
+    end
+    ST -- "snapshots, sim events" --> LOG
+    BUS -- "messages" --> LOG
+    BACK -- "agent calls" --> LOG
+    APPLY -- "action records" --> LOG
+    CHK -- "illegal: logged, state unchanged" --> LOG
+    FIN --> MET
+    APPLY -- "handle() returns, loop calls advance()" --> ADV
+
+    %% ===================== STYLES =====================
+    classDef data fill:#EEF1F4,stroke:#5F6B78,color:#1B1F24;
+    classDef engine fill:#2B3440,stroke:#1B1F24,color:#FFFFFF;
+    classDef control fill:#FFFFFF,stroke:#D7263D,color:#1B1F24;
+    classDef agent fill:#3C6E91,stroke:#1B1F24,color:#FFFFFF;
+    classDef action fill:#E8A317,stroke:#1B1F24,color:#1B1F24;
+    classDef output fill:#EEF1F4,stroke:#2E9E5B,color:#1B1F24;
+
+    class GEN,SCN data;
+    class EQ,ST,ADV,GUARD,PV,CHK,FIN engine;
+    class DP,COND,B0,B0C,PA,PB,PC,CASES,FORCED,VAL,BUS control;
+    class BACK,IA,DI,HO,RA,OFF,LLM agent;
+    class ACT,APPLY action;
+    class LOG,MET,REP,DASH,V1,V2,V3,V4,V5 output;

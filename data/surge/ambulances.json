@@ -1,0 +1,68 @@
+[
+  {
+    "id": "AMB-01",
+    "type": "ALS",
+    "station": "S1",
+    "x": 4.0,
+    "y": 17.0,
+    "capacity": 2,
+    "max_red_per_trip": 1,
+    "status": "available",
+    "busy_until_min": 0
+  },
+  {
+    "id": "AMB-02",
+    "type": "BLS",
+    "station": "S1",
+    "x": 4.0,
+    "y": 17.0,
+    "capacity": 2,
+    "max_red_per_trip": 1,
+    "status": "busy",
+    "busy_until_min": 32
+  },
+  {
+    "id": "AMB-03",
+    "type": "ALS",
+    "station": "S2",
+    "x": 10.0,
+    "y": 9.0,
+    "capacity": 2,
+    "max_red_per_trip": 1,
+    "status": "available",
+    "busy_until_min": 0
+  },
+  {
+    "id": "AMB-04",
+    "type": "BLS",
+    "station": "S2",
+    "x": 10.0,
+    "y": 9.0,
+    "capacity": 2,
+    "max_red_per_trip": 1,
+    "status": "busy",
+    "busy_until_min": 13
+  },
+  {
+    "id": "AMB-05",
+    "type": "ALS",
+    "station": "S3",
+    "x": 16.0,
+    "y": 5.0,
+    "capacity": 2,
+    "max_red_per_trip": 1,
+    "status": "available",
+    "busy_until_min": 0
+  },
+  {
+    "id": "AMB-06",
+    "type": "BLS",
+    "station": "S3",
+    "x": 16.0,
+    "y": 5.0,
+    "capacity": 2,
+    "max_red_per_trip": 1,
+    "status": "available",
+    "busy_until_min": 0
+  }
+]

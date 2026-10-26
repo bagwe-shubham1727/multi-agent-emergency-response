@@ -1,0 +1,73 @@
+{
+  "backend_label": "offline",
+  "events_file": "events.jsonl",
+  "metrics": {
+    "agent_calls": 147,
+    "ambulance_utilisation": 0.8582222222222222,
+    "black_victims": 1,
+    "conflicts": 18,
+    "conflicts_by_kind": {
+      "BED_REJECTION": 5,
+      "FLOAT_STAFF": 0,
+      "FLOAT_STAFF_COMPETITION": 0,
+      "NO_ACCEPTING_HOSPITAL": 3,
+      "RESERVE_RELEASE": 1,
+      "UNIT_CONTENTION": 9
+    },
+    "controller_omissions": 0,
+    "deteriorated": 2,
+    "diversions": 2,
+    "doctor_utilisation": 0.2990740740740741,
+    "door_to_doctor_mean_min": 2.0545454545454533,
+    "er_utilisation": 0.47708333333333336,
+    "fallbacks": 0,
+    "float_staff_lent": 0,
+    "hospital_full_on_arrival": 0,
+    "incidents": 14,
+    "incidents_reached": 13,
+    "messages_by_type": {
+      "ACCEPT": 21,
+      "COMMIT": 12,
+      "COUNTER": 1,
+      "ESCALATE": 13,
+      "INFORM": 24,
+      "PRIORITY_REPORT": 38,
+      "PROPOSE": 33,
+      "REJECT": 12,
+      "REQUEST": 0
+    },
+    "messages_total": 154,
+    "nurse_utilisation": 0.2044135802469136,
+    "patients_total": 38,
+    "red_in_window": 4,
+    "red_in_window_rate": 0.2857142857142857,
+    "red_response_mean_min": 21.754545454545454,
+    "red_total": 14,
+    "resolutions": {
+      "ACCEPTED": 15,
+      "ACCEPTED_AFTER_REJECT": 6,
+      "COUNTER_DECLINED": 0,
+      "COUNTER_GRANTED": 0,
+      "ENGINE_REJECTED": 0,
+      "FORCED_ADMISSION": 0,
+      "KEPT_ASSIGNMENT": 0,
+      "RA_COMMIT": 12
+    },
+    "responder_utilisation": 0.44111111111111106,
+    "response_time_mean_min": 26.053846153846152,
+    "response_time_p90_min": 58.60000000000002,
+    "served_rate": 0.868421052631579,
+    "survival_weighted_score": 0.5802469135802469,
+    "unserved_critical": 3,
+    "victims_served": 33
+  },
+  "run_id": "constrained-full-no-float-offline-s7380-r0",
+  "spec": {
+    "backend": "offline",
+    "condition": "full-no-float",
+    "model": null,
+    "repeat": 0,
+    "scenario": "constrained",
+    "seed": 7380
+  }
+}

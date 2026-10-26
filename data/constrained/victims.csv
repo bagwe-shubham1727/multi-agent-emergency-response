@@ -1,0 +1,40 @@
+incident_id,t_report_min,victim_id,condition,triage,required_capability,needs_als,needs_decon,golden_window_min,deteriorates_to_red_at_min
+INC-01,7,INC-01-V1,stroke symptoms,RED,neuro,True,False,26,
+INC-02,29,INC-02-V1,head injury (TBI),RED,neuro,True,False,26,
+INC-03,31,INC-03-V1,chest pain (suspected MI),YELLOW,cardiac,False,False,139,83
+INC-04,42,INC-04-V1,lacerations,GREEN,general,False,False,480,
+INC-04,42,INC-04-V2,internal bleeding,RED,trauma,True,False,32,
+INC-04,42,INC-04-V3,lacerations,GREEN,general,False,False,480,
+INC-04,42,INC-04-V4,internal bleeding,RED,trauma,True,False,53,
+INC-04,42,INC-04-V5,crush injury,RED,trauma,True,False,42,
+INC-04,42,INC-04-V6,lacerations,GREEN,general,False,False,480,
+INC-04,42,INC-04-V7,blunt chest trauma,BLACK,trauma,False,False,0,
+INC-04,42,INC-04-V8,long-bone fracture,YELLOW,trauma,False,False,227,136
+INC-05,47,INC-05-V1,lacerations,GREEN,general,False,False,480,
+INC-05,47,INC-05-V2,lacerations,YELLOW,general,False,False,146,88
+INC-05,47,INC-05-V3,lacerations,GREEN,general,False,False,480,
+INC-05,47,INC-05-V4,head injury (TBI),RED,neuro,True,False,39,
+INC-06,47,INC-06-V1,smoke inhalation,RED,general,True,False,34,
+INC-06,47,INC-06-V2,smoke inhalation,YELLOW,general,False,False,210,126
+INC-06,47,INC-06-V3,smoke inhalation,YELLOW,general,False,False,101,61
+INC-06,47,INC-06-V4,minor burns,YELLOW,general,False,False,199,119
+INC-07,48,INC-07-V1,long-bone fracture,YELLOW,trauma,False,False,135,81
+INC-07,48,INC-07-V2,crush injury,YELLOW,trauma,False,False,219,131
+INC-07,48,INC-07-V3,lacerations,GREEN,general,False,False,480,
+INC-07,48,INC-07-V4,long-bone fracture,YELLOW,trauma,False,False,123,74
+INC-07,48,INC-07-V5,crush injury,YELLOW,trauma,False,False,108,65
+INC-07,48,INC-07-V6,lacerations,GREEN,general,False,False,480,
+INC-08,97,INC-08-V1,blunt chest trauma,YELLOW,trauma,False,False,218,131
+INC-08,97,INC-08-V2,long-bone fracture,YELLOW,trauma,False,False,173,104
+INC-08,97,INC-08-V3,long-bone fracture,YELLOW,trauma,False,False,224,134
+INC-08,97,INC-08-V4,sprain / whiplash,GREEN,general,False,False,480,
+INC-08,97,INC-08-V5,head injury (TBI),RED,neuro,True,False,32,
+INC-08,97,INC-08-V6,blunt chest trauma,YELLOW,trauma,False,False,222,133
+INC-08,97,INC-08-V7,crush injury,YELLOW,trauma,False,False,185,111
+INC-09,104,INC-09-V1,cardiac arrest,RED,cardiac,True,False,8,
+INC-10,106,INC-10-V1,chest pain (suspected MI),YELLOW,cardiac,False,False,127,76
+INC-11,110,INC-11-V1,hip fracture,YELLOW,trauma,False,False,157,94
+INC-12,117,INC-12-V1,cardiac arrest,RED,cardiac,True,False,10,
+INC-13,135,INC-13-V1,stab wound,RED,trauma,True,False,53,
+INC-13,135,INC-13-V2,lacerations,GREEN,general,False,False,480,
+INC-14,137,INC-14-V1,cardiac arrest,RED,cardiac,True,False,11,

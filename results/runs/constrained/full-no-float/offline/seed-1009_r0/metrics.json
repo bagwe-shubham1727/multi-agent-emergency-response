@@ -1,0 +1,73 @@
+{
+  "backend_label": "offline",
+  "events_file": null,
+  "metrics": {
+    "agent_calls": 133,
+    "ambulance_utilisation": 0.9326666666666666,
+    "black_victims": 1,
+    "conflicts": 9,
+    "conflicts_by_kind": {
+      "BED_REJECTION": 4,
+      "FLOAT_STAFF": 0,
+      "FLOAT_STAFF_COMPETITION": 0,
+      "NO_ACCEPTING_HOSPITAL": 0,
+      "RESERVE_RELEASE": 1,
+      "UNIT_CONTENTION": 4
+    },
+    "controller_omissions": 0,
+    "deteriorated": 5,
+    "diversions": 0,
+    "doctor_utilisation": 0.35439814814814824,
+    "door_to_doctor_mean_min": 3.013513513513513,
+    "er_utilisation": 0.4934027777777778,
+    "fallbacks": 0,
+    "float_staff_lent": 0,
+    "hospital_full_on_arrival": 0,
+    "incidents": 14,
+    "incidents_reached": 14,
+    "messages_by_type": {
+      "ACCEPT": 26,
+      "COMMIT": 6,
+      "COUNTER": 1,
+      "ESCALATE": 5,
+      "INFORM": 36,
+      "PRIORITY_REPORT": 39,
+      "PROPOSE": 31,
+      "REJECT": 4,
+      "REQUEST": 0
+    },
+    "messages_total": 148,
+    "nurse_utilisation": 0.21421997755331085,
+    "patients_total": 47,
+    "red_in_window": 5,
+    "red_in_window_rate": 0.2777777777777778,
+    "red_response_mean_min": 43.73076923076924,
+    "red_total": 18,
+    "resolutions": {
+      "ACCEPTED": 22,
+      "ACCEPTED_AFTER_REJECT": 4,
+      "COUNTER_DECLINED": 0,
+      "COUNTER_GRANTED": 1,
+      "ENGINE_REJECTED": 0,
+      "FORCED_ADMISSION": 0,
+      "KEPT_ASSIGNMENT": 0,
+      "RA_COMMIT": 4
+    },
+    "responder_utilisation": 0.6840740740740741,
+    "response_time_mean_min": 44.578571428571436,
+    "response_time_p90_min": 97.88000000000004,
+    "served_rate": 0.7872340425531915,
+    "survival_weighted_score": 0.4948453608247423,
+    "unserved_critical": 3,
+    "victims_served": 37
+  },
+  "run_id": "constrained-full-no-float-offline-s1009-r0",
+  "spec": {
+    "backend": "offline",
+    "condition": "full-no-float",
+    "model": null,
+    "repeat": 0,
+    "scenario": "constrained",
+    "seed": 1009
+  }
+}

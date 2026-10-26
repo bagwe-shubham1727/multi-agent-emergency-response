@@ -1,0 +1,73 @@
+{
+  "backend_label": "offline",
+  "events_file": null,
+  "metrics": {
+    "agent_calls": 87,
+    "ambulance_utilisation": 0.8311111111111111,
+    "black_victims": 1,
+    "conflicts": 7,
+    "conflicts_by_kind": {
+      "BED_REJECTION": 4,
+      "FLOAT_STAFF": 3,
+      "FLOAT_STAFF_COMPETITION": 0,
+      "NO_ACCEPTING_HOSPITAL": 0,
+      "RESERVE_RELEASE": 0,
+      "UNIT_CONTENTION": 0
+    },
+    "controller_omissions": 0,
+    "deteriorated": 3,
+    "diversions": 0,
+    "doctor_utilisation": 0.2659060846560847,
+    "door_to_doctor_mean_min": 0.1750000000000002,
+    "er_utilisation": 0.4152777777777778,
+    "fallbacks": 0,
+    "float_staff_lent": 1,
+    "hospital_full_on_arrival": 0,
+    "incidents": 14,
+    "incidents_reached": 11,
+    "messages_by_type": {
+      "ACCEPT": 19,
+      "COMMIT": 2,
+      "COUNTER": 3,
+      "ESCALATE": 0,
+      "INFORM": 35,
+      "PRIORITY_REPORT": 36,
+      "PROPOSE": 26,
+      "REJECT": 6,
+      "REQUEST": 3
+    },
+    "messages_total": 130,
+    "nurse_utilisation": 0.22154320987654322,
+    "patients_total": 46,
+    "red_in_window": 1,
+    "red_in_window_rate": 0.06666666666666667,
+    "red_response_mean_min": 45.67777777777778,
+    "red_total": 15,
+    "resolutions": {
+      "ACCEPTED": 14,
+      "ACCEPTED_AFTER_REJECT": 5,
+      "COUNTER_DECLINED": 0,
+      "COUNTER_GRANTED": 1,
+      "ENGINE_REJECTED": 0,
+      "FORCED_ADMISSION": 1,
+      "KEPT_ASSIGNMENT": 0,
+      "RA_COMMIT": 0
+    },
+    "responder_utilisation": 0.7648148148148148,
+    "response_time_mean_min": 40.49090909090909,
+    "response_time_p90_min": 57.599999999999994,
+    "served_rate": 0.6086956521739131,
+    "survival_weighted_score": 0.40860215053763443,
+    "unserved_critical": 7,
+    "victims_served": 28
+  },
+  "run_id": "constrained-full-no-escalation-offline-s1017-r0",
+  "spec": {
+    "backend": "offline",
+    "condition": "full-no-escalation",
+    "model": null,
+    "repeat": 0,
+    "scenario": "constrained",
+    "seed": 1017
+  }
+}

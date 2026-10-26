@@ -1,0 +1,10 @@
+# Versions installed in .venv (Python 3.14) and used for development and tests.
+# Phase 1 (datagen, validate, geo) needs only the standard library.
+openai-agents==0.24.0
+openai==3.37.0
+pydantic==2.14.1
+streamlit==1.66.1
+plotly==7.1.0
+pandas==3.1.0
+numpy==2.5.4
+pytest==9.1.1
